@@ -1,0 +1,145 @@
+:root{
+    --input-bg: #494f57;
+    --output-bg: #2e313a;
+    --text-col: rgb(241, 228, 228);
+    --button-col: rgb(99, 99, 228);
+}
+body{
+    /* display:flex; */
+    /* height: 100vh; */
+    margin:0;
+}
+.heading{
+    background-color: transparent ;
+    text-align:center;
+    font-size: 1.8rem;
+}
+.half{
+    display: flex;
+    flex-direction: row;
+    height: 100%;
+    margin:0;
+    
+}
+.input_area{
+    background: var(--input-bg);
+    position:absolute;
+    width: 50%;
+    top:0;
+    bottom:0;
+    left:0;
+    height: 100%;
+    text-align:center;
+    color: var(--text-col);
+    margin:0;
+    z-index:-1;
+}
+.all_inputs{
+    display:flex;
+    flex-direction:column;
+    align-items:center;
+    justify-content: center;
+    height: 100%;
+    z-index:1;
+}
+.inputs{
+    max-width:400px;
+    display:flex;
+    flex-direction:column;
+    align-items:center;
+    justify-content: center;
+}
+input{
+    background: var(--output-bg);
+    margin:1rem 0rem;
+    padding: 1rem;
+    font-size: 1.5rem;
+    outline: none;
+    color:var(--text-col);
+    border-radius: 0.5rem;
+    max-width: 100%;
+}
+button{
+    margin:1rem;
+    padding: 1rem;
+    font-size: 1.5rem;
+    outline: none;
+    color:var(--text-col);
+    background: var(--button-col);
+    border:none;
+    width: 100%;
+}
+marquee{
+   
+    /* background: var(--output-bg) 50%; */
+    margin:0;
+    
+}
+
+/* rgb(1, 148, 1) */
+.profit{
+    color:rgb(49, 211, 49) ;
+}
+
+.loss{
+    color:rgb(240, 106, 106);
+}
+.output_area{
+    background-color: var(--output-bg);
+    position:absolute;
+    align-items:center;
+    justify-content: center;
+    width: 50%;
+    top:0;
+    bottom:0;
+    right: 0;
+    height: 100%;
+    z-index:-1;
+}
+
+.output{
+    display:none;
+    /* display:flex; */
+    flex-direction:column;
+    align-items:center;
+    text-align: center;
+    justify-content: center;
+    padding:1rem;
+    padding-bottom: 0;
+    font-size: 2rem;
+    height: 90%;
+}
+
+footer{
+    position:fixed;
+    bottom: 0;
+    font-size:1.6rem;
+    z-index:1;
+    width: 100%;
+}
+
+@media  screen and (max-width: 800px) {
+    body{
+        background: var(--input-bg);
+    }
+    .heading{
+        font-size: 1.3rem;
+    }
+    .half{
+        flex-direction:column;
+    }
+    .input_area{
+        width: 100%;
+        position:relative;
+        
+    }
+    input,button{
+        font-size: 1rem;
+    }
+    .output_area{
+        display: flex;
+        width: 100%;
+        position:unset;
+    }
+
+}
