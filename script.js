@@ -35,7 +35,7 @@ const clickHandler = () => {
         "Yay! You earned a profit of Rs." +
         profit[0] +
         " with profit percentage " +
-        profit[1].toFixed(5) +
+        profit[1].toFixed(2) +
         "%";
 
       showOutput("rgb(49, 211, 49)", msg);
@@ -47,7 +47,7 @@ const clickHandler = () => {
         "Oops! You had a loss of Rs." +
         loss[0] +
         " with loss percentage " +
-        loss[1].toFixed(5) +
+        loss[1].toFixed(2) +
         "%";
 
       showOutput("rgb(240, 106, 106) ", msg);
